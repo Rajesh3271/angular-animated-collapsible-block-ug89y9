@@ -1,0 +1,16 @@
+<main>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+  <section class="collapsible" [@collapse]="collapsed">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non expedita asperiores id dolore hic, recusandae reiciendis. Reiciendis maiores tenetur quidem iusto, laborum illum. Perspiciatis et veniam, iste enim ab deserunt!</p>
+  </section>
+  <section>
+   <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+</main>
+
+<aside>
+    <button *ngIf="collapsed" (click)="expand()">Expand</button>
+    <button *ngIf="!collapsed" (click)="collapse()">Collapse</button>
+</aside>
